@@ -1,3 +1,4 @@
+//*program to receive values of latitude (L1,L2) and longitude (G1,G2) in degrees of two places on earth and find the distance b/w them
 #include<stdio.h>
 #include<math.h>
 void main()
@@ -12,5 +13,5 @@ void main()
   g1=g1*(3.14/180);
   g2=g2*(3.14/180);
   d=3963*acos((sin(l1)*sin(l2))+(cos(l1)*cos(l2)*cos(g2-g1)));
-  printf("Distance = %f",d);
+  printf("Distance in nautical miles = %f",d);
 }
